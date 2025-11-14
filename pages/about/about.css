@@ -1,0 +1,131 @@
+main {
+  padding-top: 2rem;
+}
+main h1 {
+  font-family: 'manjari', sans-serif;
+  font-size: 32px;
+  color: #fcedd8;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+main p {
+  font-family: 'poppins', sans-serif;
+  font-size: var(--font-size-cards);
+  color: #fcedd8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.box-text-img {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--color-cards);
+  border-radius: 10px;
+  margin-top: 0;
+}
+.box-text-img .text {
+  flex: 1;
+}
+.box-text-img .text h2 {
+  font-family: 'manjari', sans-serif;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: var(--body-color);
+}
+.box-text-img .text p {
+  font-size: var(--font-size-cards);
+  color: var(--body-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.box-text-img .text button {
+  background-color: var(--color-button);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.box-text-img .text button:hover {
+  background-color: var(--color-button-hover);
+}
+.box-text-img .text button a {
+  color: inherit;
+  text-decoration: none;
+}
+.box-text-img .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.box-text-img .image img {
+  max-width: 100%;
+  height: 648px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background-color: var(--color-cards);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  transition: var(--transition);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 360px;
+}
+.card:hover {
+  background-color: var(--color-cards-hover);
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.card p {
+  color: var(--body-color);
+  font-size: var(--font-size-cards);
+  text-align: center;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .box-text-img {
+    flex-direction: column;
+    text-align: center;
+  }
+  .box-text-img .image {
+    margin-top: 1rem;
+  }
+}   
+
+@media (max-width: 600px) {
+  .container-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .card {
+    height: 340px;
+  }
+  .card img {
+    height: 220px;
+  }
+}

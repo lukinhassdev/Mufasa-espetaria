@@ -1,0 +1,90 @@
+.contato-espetaria {
+  max-width: 750px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  color: var(--font-color-footer-links);
+}
+.titulo-espetaria {
+  font-family: "manjari", sans-serif;
+  font-size: 2.6rem;
+  color: var(--font-color-navlinks);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  margin-bottom: 0.5rem;
+}
+.subtitulo-espetaria {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #f0d7be;
+  opacity: 0.9;
+}
+.card-contato-espetaria {
+  background-color: var(--color-cards);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  border-left: 6px solid var(--color-button);
+  transition: var(--transition);
+}
+.card-contato-espetaria:hover {
+  background-color: var(--color-cards-hover);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.4rem;
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a2e1d;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #bfa58f;
+  background-color: #fff;
+  font-size: 1rem;
+  outline: none;
+  font-family: "poppins", sans-serif;
+  transition: border var(--transition), box-shadow var(--transition);
+}
+input:focus,
+textarea:focus {
+  border: 1px solid var(--color-button);
+  box-shadow: 0 0 8px rgba(155, 52, 15, 0.5);
+}
+textarea {
+  height: 120px;
+  resize: none;
+}
+button {
+  margin-top: 1rem;
+  align-self: flex-start;
+  padding: 14px 34px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--font-color-footer-links);
+  background-color: var(--color-button);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+button:hover {
+  background-color: var(--color-button-hover);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .card-contato-espetaria {
+    padding: 1.8rem;
+  }
+  .titulo-espetaria {
+    font-size: 2rem;
+  }
+}
