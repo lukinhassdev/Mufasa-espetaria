@@ -1,0 +1,138 @@
+.box-images-promos {
+  width: 100vw;
+  height: 100; 
+  overflow: hidden;
+  position: relative;
+  background-color: var(--body-color);
+}
+.box-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+.box-wrap-menu {
+  color: var(--font-color-navlinks);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.title-menu h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--font-color-navlinks);
+}
+.box-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.espetos-cards,
+.porcao-cards,
+.bebidas-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.card {
+  background-color: var(--color-cards);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform var(--transition), background-color var(--transition);
+  padding: 1rem;
+}
+.card:hover {
+  background-color: var(--color-cards-hover);
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+.card p {
+  margin: 1rem 0;
+  color: #333;
+  font-size: 20px;
+  font-family: "manjari", sans-serif;
+}
+.card button {
+  background-color: var(--color-button);
+  border: none;
+  padding: 0.8rem 1.5rem; 
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: var(--color-button-hover);
+}
+.card button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+  .text {
+    padding: clamp(15px, 5%, 30px);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-images-promos {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: calc(var(--font-size-footer) - 1px);
+  }
+  .footer .menu-links,
+  .footer .social-links {
+    gap: 1rem;
+  }
+  .box-cards .card {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text h1, .text h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+  .text p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+  .box-cards .card {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .search-box {
+    width: 100%;
+  }
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
