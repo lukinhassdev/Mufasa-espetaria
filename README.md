@@ -51,7 +51,7 @@ Github Pages: ***[https://lnkd.in/emBTsESS]***
 ---
 
 ## 👨‍💻 Desenvolvedor
-**Seu Nome** – Desenvolvedor Front-End  
+**Lucas silva de magalhães** – Desenvolvedor Front-End  
 📧 Email: *lucassilvamagalhaes352@gmail.com*  
 🔗 LinkedIn: *https://www.linkedin.com/in/lucas-magalh%C3%A3es-dev-frontend3b39036b/*
 
